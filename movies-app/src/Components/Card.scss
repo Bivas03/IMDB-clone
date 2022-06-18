@@ -1,0 +1,124 @@
+.card{
+    display: inline-block;
+    margin: 15px;
+    cursor: pointer;
+    & .poster{
+        width: 75px;
+        height: 100px;
+        @media screen and (min-width: 540px) {
+            width: 100px;
+            height: 125px;
+        }
+        @media screen and (min-width: 640px) {
+            width: 125px;
+            height: 150px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 200px;
+            height: 300px;
+        }
+    }
+    & .details{
+        display: block;
+        width: 75px;
+        @media screen and (min-width: 540px) {
+            width: 100px;
+        }
+        @media screen and (min-width: 640px) {
+            width: 125px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 200px;
+        }
+        font-family: 'Times New Roman', Times, serif;
+        position: relative;
+        color: orange;
+        & .title{
+            display: block;
+            @media screen and (min-width: 540px) {
+                font-size: medium;
+            }
+            @media screen and (min-width: 640px) {
+                font-size: large;
+            }
+            @media screen and (min-width: 768px) {
+                font-size: larger;
+            }
+            font-size: small;
+            margin-bottom: 5px;
+        }
+        & .year{
+            display: block;
+            color: black;
+            font-size: small;
+            @media screen and (min-width: 540px) {
+                font-size: medium;
+            }
+            @media screen and (min-width: 640px) {
+                font-size: large;
+            }
+            @media screen and (min-width: 768px) {
+                font-size: 16px;
+            }
+            
+        }
+        & .rating{
+            font-size: x-small;
+            display: none;
+            @media screen and (min-width: 768px) {
+                display: block;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                font-size: 16px;
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    font-size: 16px;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('../Img/favourite.png');
+                    background-repeat: no-repeat;
+                    position: relative;
+                    top: 1px;
+                    padding-right: 3px;
+                }
+            }
+            color: white;
+        }
+    }
+    &:hover{
+        & .poster{
+            width: 90px;
+            height: 115px;
+            @media screen and (min-width: 540px) {
+                width: 115px;
+                height: 140px;
+            }
+            @media screen and (min-width: 640px) {
+                width: 140px;
+                height: 165px;
+            }
+            @media screen and (min-width: 768px) {
+                width: 250px;
+                height: 350px;
+            }
+            z-index: 10;
+            transition: 0.2s all ease-in-out;
+        }
+        & .details{
+            width: 90px;
+            @media screen and (min-width: 540px) {
+                width: 115px;
+            }
+            @media screen and (min-width: 640px) {
+                width: 140px;
+            }
+            @media screen and (min-width: 768px) {
+                width: 250px;
+            }
+            z-index: 10;
+            transition: 0.2s all ease-in-out;
+        }
+    }
+}

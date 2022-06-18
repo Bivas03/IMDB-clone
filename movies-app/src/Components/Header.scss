@@ -1,0 +1,84 @@
+.header{
+    background-color: darkgray;
+    position: relative;
+    & .logo{
+        display: inline-block;
+        &>img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px 20px 10px 20px;
+        }
+    }
+    & .navbar{
+        &.close{
+            transition: all .5s ease-in-out;
+            transform-origin: top;
+            transform: scaleY(0);
+            @media screen and (min-width: 640px) {
+                transform: none;
+            }
+        }
+        &.open{
+            transition: all .5s ease-in-out;
+            transform-origin: top;
+            transform: scaleY(1);
+        }
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 150px;
+        background-color: darkgray;
+        z-index: 10;
+        border: 2px solid black;
+        @media screen and (min-width: 640px) {
+            top: 25%;
+            width: auto;
+            background-color: transparent;
+            border: none;
+        }
+        & nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (min-width: 640px) {
+                flex-wrap: nowrap;
+                padding: 10px;
+                flex-direction: row;
+            }
+            & a{
+                text-decoration: none;
+                padding: 10px 40px;
+                @media screen and (min-width: 640px) {
+                    padding: 10px;
+                }
+                margin: 0px 5px;
+                font-weight: bold;
+                font-size: large;
+                font-style: oblique;
+                color: black;
+                &:hover{
+                    color: white;
+                    border-bottom: 2px solid orange;
+                }
+                &.active{
+                    color: white;
+                    border-bottom: 2px solid orange;
+                }
+            }
+        }
+    }
+    & .menu{
+        position: absolute;
+        top: 35%;
+        right: 20px;
+        &>img{
+            width: 30px;
+            height: 30px;
+        }
+        @media screen and (min-width: 640px) {
+            display: none;
+        }
+    }
+}
