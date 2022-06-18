@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/IMDB-clone/static/css/main.4a443a9e.css",
+    "main.js": "/IMDB-clone/static/js/main.0a730802.js",
+    "static/js/787.2b35ebb1.chunk.js": "/IMDB-clone/static/js/787.2b35ebb1.chunk.js",
+    "static/media/Logo.png": "/IMDB-clone/static/media/Logo.57f732858c6b4a467de0.png",
+    "static/media/anime banner.jpg": "/IMDB-clone/static/media/anime banner.c786444c51f2ee315835.jpg",
+    "static/media/Mirzapur-2.jpg": "/IMDB-clone/static/media/Mirzapur-2.25bffe76217b181e4a14.jpg",
+    "static/media/Movie Banner.jfif": "/IMDB-clone/static/media/Movie Banner.3dd5cbdb45bb1b616618.jfif",
+    "static/media/hamburger-menu.ico": "/IMDB-clone/static/media/hamburger-menu.bea7c49d323599e892c2.ico",
+    "index.html": "/IMDB-clone/index.html",
+    "main.4a443a9e.css.map": "/IMDB-clone/static/css/main.4a443a9e.css.map",
+    "main.0a730802.js.map": "/IMDB-clone/static/js/main.0a730802.js.map",
+    "787.2b35ebb1.chunk.js.map": "/IMDB-clone/static/js/787.2b35ebb1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a443a9e.css",
+    "static/js/main.0a730802.js"
+  ]
+}
